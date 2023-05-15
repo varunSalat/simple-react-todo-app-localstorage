@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.todo_list_main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.todo_list_header {
+    margin-top: 1em;
+    font-size: 2rem;
+    color: rgb(162, 6, 6);
+}
+
+.input_form {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input_form input {
+    font-size: 1.2rem;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.input_form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 1.2rem;
+    padding: 0.4em;
+    background-color: rgb(0, 85, 255);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+.input_form button:hover,
+.input_form button:focus,
+.input_form button:active {
+    background-color: green;
+}
+
+.list_container {
+    width: 100%;
+}
+
+.list_container li {
+    padding: 0.5em;
+    list-style: decimal;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+
+
+
+.edit_form input {
+    width: calc(100% - 10px);
+    font-size: 1.2rem;
+    padding: 0.4em;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.button_container {
+    display: flex;
+    gap: 0.5em;
+}
+
+.button_container button {
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+    padding: 0.2em;
+    font-size: 1.1rem;
+    height: 35px;
+    width: 35px;
+    border: none;
+    color: rgb(54, 1, 1);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    border: 1px solid black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.button_container button:first-child:hover {
+    color: red;
+}
+
+.button_container button:last-child:hover {
+    color: green;
+}
